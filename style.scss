@@ -1,0 +1,252 @@
+body {
+    background-image: url(./gettyimages-1222855507-2048x2048.jpg);
+}
+h1 {color: white;
+    font-weight:bolder;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 1px 1px #333
+    }
+p {color: white;
+    font-weight: bold;
+    font-size: 21px;
+    text-align: center;}
+li {color: white;
+    font-weight: bold; 
+    text-align: center;}
+label{
+    font-weight: bold;
+    color: white;
+}
+
+.tout { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .un {
+        margin-top: 80px;
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+        .pgros{display: flex;
+              flex-direction: column;
+              align-items: center;}
+        button {
+            display: inline-block;
+            background-color: #ff8e18;
+            border-radius: 10px;
+            border: 4px double #cccccc;
+            color: #eeeeee;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            margin-top: 55px;
+          }
+          button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          button span:after {
+            content: "\00bb";
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+          }
+          button:hover {
+            background-color: #f7c2f9;
+          }
+          button:hover span {
+            padding-right: 25px;
+          }
+          button:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+        .h1{
+            background:linear-gradient(35deg, #ffa600, #ff8e18);
+            border-radius: 20px;
+            border: solid rgb(230, 122, 0) 5px;
+           
+        }
+        .p{background:linear-gradient(35deg, #32a3ff, #1081eb);
+            border-radius: 20px;
+            border: solid #0e6fc9 5px;
+            margin-top: 50px;}
+
+    }
+
+    .deux {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        img {
+            width: 420px;
+            height: auto;
+            border: solid 5px rgb(223, 119, 0);
+            border-radius: 50% 20% / 10% 40%;
+            margin-top: 80px;
+        
+        }
+        form {
+            border: solid 5px #32a3ff ;
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+            margin-top: 30px;
+            width: 70%;
+            
+            
+            #name {
+                margin-left: 13px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            #prenom{
+                margin-bottom: 10px;
+            }
+            .container {
+                position: absolute;
+                top: 10%;
+              }
+              .button {
+                border: none;
+                display: block;
+                text-align: center;
+                cursor: pointer;
+                text-transform: uppercase;
+                outline: none;
+                overflow: hidden;
+                position: relative;
+                color: #eeeeee;
+                font-weight: 600;
+                font-size: 15px;
+                background-color: #ffa600;
+                padding: 15px 50px;
+                margin: 10px auto;
+              }
+              .button span {
+                position: relative;
+                z-index: 1;
+              }
+              .button:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 470%;
+                width: 140%;
+                background: #32a3ff;
+                -webkit-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+                -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+                transform: translateX(-100%) translateY(-25%) rotate(45deg);
+              }
+              .button:hover:after {
+                -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+                transform: translateX(-9%) translateY(-25%) rotate(45deg);
+              }
+        }
+    }
+}
+.jordantout {
+  display: none;
+}
+@media all and (max-width:991px) {
+.gif{display: none;}
+  .tout {display: flex;
+         flex-flow: column wrap;
+         align-items: center;
+         .un {
+          .pgros {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+              .mesprojets {
+                height: 100px;
+              }
+          }
+         }
+         h1 {width: 440px;}
+         .p {width: 350px;
+            margin-right: 60px;}
+          .deux {
+            width: 440px;
+            margin-top: 100px;
+          }
+  }
+  .open{
+    .jordantout{
+      .mickeyetpage{
+        .micky{}
+        .pagejordan{}
+      }
+    }
+  }
+}
+
+.cross { display: none;
+
+  
+}
+/* Partie mes projets */
+
+.open { background-image: url(https://images.hdqwalls.com/download/outrun-1p-2560x1440.jpg);
+        background-position: 50% 10%;
+        background-repeat: no-repeat;
+        background-size: 1400px;
+
+
+  .cross {
+  display: block;
+  float: right;
+  font-size: 2rem;
+  margin-right: 20px;
+  margin-top: 15px;
+  color: white;
+  cursor: pointer;
+  }
+
+  .tout{display: none;
+    .un{
+      button{display: none;}
+    }
+  }
+  .jordantout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+      .mickyetpage{    
+        background:linear-gradient(35deg, #d800bb, #7c007c);
+        border-radius: 20px;
+        border: solid #59006b 5px;
+        margin-top: 60px;
+      .micky{color: #ffffff;
+        font-weight:bolder;
+        font-size: 32px;
+        text-align: center;
+        text-shadow: 1px 1px #333
+                
+      }
+      .pagejordan{width: 360px;
+                  height: 420px;
+
+    }
+  }
+  }
+}
+
+
+
+
